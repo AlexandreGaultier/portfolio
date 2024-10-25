@@ -231,7 +231,6 @@ section {
 
 /* Project filters */
 .project-filters {
-    display: flex;
     overflow-x: auto;
     scrollbar-width: none; /* Pour Firefox */
     -ms-overflow-style: none; /* Pour Internet Explorer et Edge */
@@ -1515,6 +1514,7 @@ textarea:focus {
     }
 
     .project-filters {
+        padding: 7px 0;
         display: flex;
         width: 100%;
         overflow-x: auto;
