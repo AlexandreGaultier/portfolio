@@ -184,4 +184,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    const header = document.querySelector('.main-header');
+    let lastScrollTop = 0;
+
+    function handleScroll() {
+        if (window.innerWidth <= 768) {  // Vérifie si on est en mode mobile
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll vers le bas
+                header.classList.add('nav-hidden');
+            } else {
+                // Scroll vers le haut
+                header.classList.remove('nav-hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        } else {
+            // En mode desktop, s'assure que la navbar est toujours visible
+            header.classList.remove('nav-hidden');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);  // Gère également le redimensionnement
 });
