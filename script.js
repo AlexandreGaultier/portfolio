@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinksContainer = document.querySelector('.nav-links');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -60,20 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = themeToggle.querySelector('i');
         icon.className = isDarkMode ? 'fas fa-sun' : 'fas fa-moon';
     }
-
-    // Mobile menu toggle
-    mobileMenuToggle.addEventListener('click', () => {
-        navLinksContainer.classList.toggle('show');
-        mobileMenuToggle.classList.toggle('active');
-    });
-
-    // Close mobile menu when a link is clicked
-    navLinksContainer.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinksContainer.classList.remove('show');
-            mobileMenuToggle.classList.remove('active');
-        });
-    });
 
     // Testimonials slider
     const testimonials = document.querySelectorAll('.testimonial');

@@ -56,7 +56,7 @@ h2 {
 /* Header */
 .main-header {
     background-color: var(--header-bg);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -67,29 +67,28 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0.3rem 0; /* Réduit encore plus le padding vertical */
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.1rem; /* Réduit légèrement la taille du logo */
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
 }
 
 .nav-links {
-    display: none;
+    display: flex;
     list-style-type: none;
-}
-
-.nav-links li {
-    margin-left: 1.5rem;
+    align-items: center;
+    gap: 0.8rem; /* Réduit l'espace entre les liens */
 }
 
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 0.85rem; /* Réduit encore la taille de la police des liens */
 }
 
 .nav-links a:hover {
@@ -100,9 +99,9 @@ h2 {
     background: none;
     border: none;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 0.95rem; /* Réduit la taille de l'icône du toggle */
     cursor: pointer;
-    padding: 5px;
+    padding: 2px; /* Réduit le padding du bouton */
     outline: none; /* Supprime l'outline par défaut */
 }
 
@@ -141,7 +140,7 @@ section {
     display: inline-block;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -492,7 +491,7 @@ section {
 
 .cta-button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.3rem;
     background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
@@ -1164,7 +1163,7 @@ textarea:focus {
 
 .social-icons a {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 0.95rem; /* Réduit légèrement la taille des icônes sociales */
     transition: color 0.3s ease;
 }
 
