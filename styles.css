@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -1499,13 +1500,27 @@ textarea:focus {
         padding-top: 50px; /* Correspond à la hauteur de la navbar */
     }
 
+    .hero {
+        padding-bottom: 20px;
+    }
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
 
     .cta-button {
-        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .cta-button.cv-qr-code {
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .cta-button.cv-qr-code img {
+        width: 125px;
+        height: 125px;
     }
 
     .bottom-buttons {
