@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Gaultier - Développeur Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">AG</a>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#education">Formations</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="accueil" class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Alexandre Gaultier</h1>
+                    <h2>Développeur Full Stack</h2>
+                    <p>Passionné par la création d'applications web innovantes et performantes</p>
+                    <div class="cta-buttons">
+                        <div class="top-buttons">
+                            <a href="#portfolio" class="cta-button">Voir mes projets</a>
+                            <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank" class="cta-button linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="bottom-buttons">
+                            <a href="lien_vers_votre_cv" class="cta-button cv-qr-code" title="Voir mon CV">
+                                <img src="/img/CVqrcode.png" alt="QR Code CV" class="qr-code-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/profil.jpg" alt="Alexandre Gaultier">
+                </div>
+            </div>
+        </section>
+
+        <section id="a-propos" class="container">
+            <h2>À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Diplômé BAC+5 avec quatre années d'expérience, je suis un développeur Full Stack passionné, spécialisé en Vue.js et Node.js. Mon parcours m'a permis d'acquérir une solide expertise en architecture microservices et de développer divers outils pour optimiser les performances des applications.
+                    </p>
+                    <p>
+                        Ma passion pour le développement et mon désir constant d'apprendre me permettent de relever des défis techniques complexes. Curieux et innovant, je suis déterminé à apporter des solutions robustes et efficaces pour chaque projet.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Compétences</h3>
+                    <div class="skill-category">
+                        <h4>Front-end</h4>
+                        <ul>
+                            <li>Vue.js</li>
+                            <li>React</li>
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Back-end</h4>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>API RESTful</li>
+                            <li>Microservices</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Base de données</h4>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>SQLite</li>
+                            <li>InfluxDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Outils</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>CI/CD</li>
+                            <li>Jira</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-controls">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="vue">Vue.js</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+                    <button class="filter-btn" data-filter="typescript">TypeScript</button>
+                    <button class="filter-btn" data-filter="firebase">Firebase</button>
+                    <button class="filter-btn" data-filter="3d">3D</button>
+                </div>
+                <div class="project-search">
+                    <input type="text" id="project-search" placeholder="Rechercher un projet...">
+                </div>
+            </div>
+            <div class="projects">
+                <div class="project-card" data-category="vue javascript vuex json">
+                    <img src="img/CryptsOfChaos.png" alt="Crypts Of Chaos">
+                    <div class="project-info">
+                        <h3>Crypts Of Chaos</h3>
+                        <p>Work In Progress : Numérisation d'un jeu de plateau avec Vue3.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Vuex</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://crypts-of-chaos.netlify.app/" target="_blank" class="project-link view-project">
+                                    Voir le projet
+                                </a>
+                            </div>
+                            <div class="project-link-wrapper">
+                                <a href="https://github.com/AlexandreGaultier/mini-rogue" target="_blank" class="project-link view-source">
+                                    <i class="fab fa-github"></i> Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design figma">
+                    <img src="img/FigmaDanielWellington.png" alt="Figma Daniel Wellington">
+                    <div class="project-info">
+                        <h3>Figma Daniel Wellington</h3>
+                        <p>Design d'une application de vente de montres.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="vue typescript pinia">
+                    <img src="img/Killer.png" alt="Jeu du Killer">
+                    <div class="project-info">
+                        <h3>Jeu du Killer</h3>
+                        <p>Jeu de bluff avec Vue3/Typescript et Pinia.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Pinia</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://killer-game.netlify.app/" target="_blank" class="project-link view-project">Voir le projet</a>
+                            </div>
+                            <div class="project-link-wrapper">
+                                <a href="https://github.com/AlexandreGaultier/killer-game" target="_blank" class="project-link view-source">
+                                    <i class="fab fa-github"></i> Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design figma">
+                    <img src="img/FigmaPlantApp.png" alt="Figma Plant App">
+                    <div class="project-info">
+                        <h3>Figma Plant App</h3>
+                        <p>Design d'une application de vente de plantes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="vue firebase">
+                    <img src="img/Vue3CrudFirebase.png" alt="Vue 3 Crud Firebase">
+                    <div class="project-info">
+                        <h3>Vue 3 Crud Firebase</h3>
+                        <p>Application de gestion d'utilisateur avec Vue 3 et Firebase.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://github.com/AlexandreGaultier?tab=repositories" target="_blank" class="project-link view-source">
+                                    <i class="fab fa-github"></i> Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="vue API netlify">
+                    <img src="img/OrgaJournalière.png" alt="Orga Journalière">
+                    <div class="project-info">
+                        <h3>Orga Journalière</h3>
+                        <p>Application VueJs de gestion de tâches journalière Hébergée sur Netlify.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://backorgajournaliere.onrender.com/" target="_blank" class="project-link view-project">Voir l'API</a>
+                            </div>
+                            <div class="project-link-wrapper">
+                                <a href="https://github.com/VotreNomUtilisateur/orga-journaliere" target="_blank" class="project-link view-source">
+                                    <i class="fab fa-github"></i> Code source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design figma">
+                    <img src="img/FigmaTravelApp.png" alt="Figma Travel App">
+                    <div class="project-info">
+                        <h3>Figma Travel App</h3>
+                        <p>Design d'une application de voyage.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design figma">
+                    <img src="img/FigmaJuices.png" alt="Figma Juices App">
+                    <div class="project-info">
+                        <h3>Figma Juices App</h3>
+                        <p>Design d'une application de vente de jus de fruits.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design figma">
+                    <img src="img/FigmaIceCream.png" alt="Figma Ice Cream App">
+                    <div class="project-info">
+                        <h3>Figma Ice Cream App</h3>
+                        <p>Design d'une application de vente de glaces.</p>
+                        <div class="project-tags">
+                            <span class="tag">Design</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="html-css">
+                    <img src="img/portfolio.png" alt="Portfolio Anna Godet">
+                    <div class="project-info">
+                        <h3>Portfolio Anna Godet</h3>
+                        <p>Portfolio en cours de création pour une jeune journaliste française en volontariat en Slovénie.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://portfolio-anna-godet.netlify.app/" target="_blank" class="project-link view-project">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="html-css">
+                    <img src="img/educfin.png" alt="Educfin">
+                    <div class="project-info">
+                        <h3>Educfin</h3>
+                        <p>Site non-officiel de Educfin.fr. Réalisé en HTML CSS pour (re)pratiquer.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://educfin.netlify.app/" target="_blank" class="project-link view-project">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="html-css">
+                    <img src="img/BancPublic1.png" alt="BancPublic">
+                    <div class="project-info">
+                        <h3>BancPublic</h3>
+                        <p>Site non-officiel de BancPublic Skate Store. Réalisé en HTML CSS pour (re)pratiquer.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <div class="project-link-wrapper">
+                                <a href="https://banc-public.netlify.app/" target="_blank" class="project-link view-project">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="vue API">
+                    <img src="img/weatherApppng.png" alt="Weather App">
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Application VueJs permettant à un utilisateur de récupérer les données de l'API d'openweathermap en temps réel.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="react API JSON">
+                    <img src="img/ReactTest.png" alt="Tuto React">
+                    <div class="project-info">
+                        <h3>Tuto React</h3>
+                        <p>Blog tutorial by The Ninja on youtube. Ce blog permet de créer, éditer et lister de simples posts pour pratiquer le framework.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="vue API JSON">
+                    <img src="img/BeeOme.png" alt="BeeOme">
+                    <div class="project-info">
+                        <h3>BeeOme</h3>
+                        <p>Une application VueJs permettant à un utilisateur de récupérer les données des capteurs dans sa ruche.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">API</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="3d blender">
+                    <img src="img/blenderStarWars.png" alt="Blender Star Wars">
+                    <div class="project-info">
+                        <h3>Blender (animation)</h3>
+                        <p>Starship chase animated</p>
+                        <div class="project-tags">
+                            <span class="tag">Blender</span>
+                            <span class="tag">3D</span>
+                            <span class="tag">Animation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <img src="https://via.placeholder.com/400x200" alt="Les tendances du développement web en 2024" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3>Les tendances du développement web en 2024</h3>
+                        <p class="blog-post-date">15 janvier 2024</p>
+                        <p class="blog-post-excerpt">Découvrez les technologies et pratiques qui façonneront le développement web cette année...</p>
+                        <a href="#" class="read-more">Lire la suite</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="https://via.placeholder.com/400x200" alt="Comment optimiser les performances de vos applications Vue.js" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3>Comment optimiser les performances de vos applications Vue.js</h3>
+                        <p class="blog-post-date">5 février 2024</p>
+                        <p class="blog-post-excerpt">Apprenez les meilleures pratiques pour améliorer la vitesse et l'efficacité de vos applications Vue.js...</p>
+                        <a href="#" class="read-more">Lire la suite</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="https://via.placeholder.com/400x200" alt="L'importance de l'accessibilité dans le développement web" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3>L'importance de l'accessibilité dans le développement web</h3>
+                        <p class="blog-post-date">20 février 2024</p>
+                        <p class="blog-post-excerpt">Explorez pourquoi l'accessibilité est cruciale et comment l'intégrer dans vos projets web...</p>
+                        <a href="#" class="read-more">Lire la suite</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="container">
+            <h2>Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Jury de MSPR et Intervenant CI</h3>
+                        <p class="timeline-date">10/2024 - 11/2024</p>
+                        <ul>
+                            <li>Évaluation des projets MSPR (Mise en Situation Professionnelle Réelle) des étudiants.</li>
+                            <li>Animation de sessions d'intégration continue (CI) pour partager l'expertise professionnelle.</li>
+                            <li>Contribution à l'amélioration des compétences pratiques des étudiants en développement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Cours Particuliers en Programmation</h3>
+                        <p class="timeline-date">01/2024 - 07/2024</p>
+                        <ul>
+                            <li>Accompagnement d'étudiants pour améliorer leurs compétences en programmation.</li>
+                            <li>Création de supports pédagogiques adaptés aux besoins et niveaux.</li>
+                            <li>Adaptation des méthodes pour favoriser compréhension et autonomie.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Développeur Full Stack - R3 Group</h3>
+                        <p class="timeline-date">2023</p>
+                        <ul>
+                            <li>Création de 3 POC différents pour un outil d'administration interne en Svelte, Vue et React.</li>
+                            <li>Formation autodidacte à Svelte, React et Keycloak.</li>
+                            <li>Participation aux réunions décisionnaires du choix de framework JS à utiliser.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Développeur Front - OnePoint</h3>
+                        <p class="timeline-date">2023</p>
+                        <ul>
+                            <li>Refonte graphique du monitoring web du projet Livre d'or (projet interne de OnePoint).</li>
+                            <li>Création de maquettes sur Figma et intégration de Vuetify.</li>
+                            <li>Formation d'une coéquipière à Vuetify.</li>
+                            <li>Formation autodidacte à NuxtJs, Docker et GraphQL.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Intervenant Python - CI - EPSI</h3>
+                        <p class="timeline-date">11/2022 - 12/2022</p>
+                        <ul>
+                            <li>Intervention auprès de lycéens et d'étudiants de 3ème année.</li>
+                            <li>Enseignement des fondamentaux Python à des lycéens.</li>
+                            <li>Cours d'intégration continue pour des étudiants de 3ème année.</li>
+                            <li>Création de supports adaptés à chaque niveau.</li>
+                            <li>Encadrement des projets et exercices pratiques.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Développeur FullStack VueJs - NodeJs - Hublot</h3>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <ul>
+                            <li>Dans une architecture micro-service :</li>
+                            <li>Création d'outils d'amélioration de productivité sur le CRM de l'équipe de développement.</li>
+                            <li>Ajout de nouvelles fonctionnalités sur les tablettes des clients.</li>
+                            <li>Création de plusieurs API. Modification et ajout de plusieurs routes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Développeur C# - Eurovat</h3>
+                        <p class="timeline-date">2019 - 2021</p>
+                        <ul>
+                            <li>TMA sur le logiciel de l'entreprise, ajout et refonte de pages. Fix de bugs.</li>
+                            <li>Création de requêtes SQL pour faire du reporting.</li>
+                            <li>Création/modification de Triggers/Procédure Stockées.</li>
+                            <li>Déploiement via Admin Directory.</li>
+                            <li>Help Desk aux utilisateurs du logiciel interne.</li>
+                            <li>Installation et configuration des laptops arrivant.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Stage - La maison du taraud</h3>
+                        <p class="timeline-date">2020</p>
+                        <ul>
+                            <li>Analyse du besoin client.</li>
+                            <li>Création d'une application mobile avec Xamarin.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Stage - CHU d'Angers</h3>
+                        <p class="timeline-date">2019</p>
+                        <ul>
+                            <li>Métrologie réseau.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Stage - CHU d'Angers</h3>
+                        <p class="timeline-date">2018</p>
+                        <ul>
+                            <li>Refonte de formulaire de préscription de médicament avec JQuery.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Animateur - ALSH et colonie de vacances</h3>
+                        <p class="timeline-date">Étés 2017 - 2018 - 2019</p>
+                        <ul>
+                            <li>Animation en ALSH et colonie de vacances.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container">
+            <h2>Diplômes et Formation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Titre RNCP niveau 7 "Expert de l'informatique et du système d'information"</h3>
+                        <p class="timeline-date">2020 – 2022</p>
+                        <p>EPSI Nantes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Titre Concepteur Développeur d'Application</h3>
+                        <p class="timeline-date">2019 – 2020</p>
+                        <p>EPSI Nantes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BTS SIO option SLAM</h3>
+                        <p class="timeline-date">2018 – 2019</p>
+                        <p>EPSI Nantes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BTS SIO option SISR</h3>
+                        <p class="timeline-date">2016 – 2018</p>
+                        <p>Lycée André Malraux</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="temoignages" class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <div class="testimonials-container">
+                <div class="testimonial active">
+                    <blockquote>
+                        "Alexandre est un développeur talentueux et passionné. Son expertise en Vue.js et Node.js a été cruciale pour le succès de notre projet."
+                    </blockquote>
+                    <cite>- Marie Dupont, Chef de projet chez TechInno</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        "J'ai eu le plaisir de travailler avec Alexandre sur plusieurs projets. Sa capacité à résoudre des problèmes complexes et son attention aux détails sont remarquables."
+                    </blockquote>
+                    <cite>- Thomas Martin, Lead Developer chez WebSolutions</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        "Alexandre a démontré une grande adaptabilité et une forte volonté d'apprendre. Il a rapidement maîtrisé de nouvelles technologies pour répondre aux besoins de notre équipe."
+                    </blockquote>
+                    <cite>- Sophie Lefebvre, CTO chez InnovTech</cite>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial" aria-label="Témoignage précédent"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial" aria-label="Témoignage suivant"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Alexandre Gaultier. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AlexandreGaultier" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Retour en haut de la page">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
