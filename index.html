@@ -6,6 +6,7 @@
     <title>Alexandre Gaultier - Développeur Full Stack</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/arka.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,13 +22,12 @@
                     <li><a href="#experience">Expérience</a></li>
                     <li><a href="#education">Formations</a></li>
                 </ul>
+                <div class="icons-links">
+                    <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AlexandreGaultier" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
                 <button id="theme-toggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
-                </button>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </button>
             </nav>
         </div>
@@ -65,49 +65,57 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Diplômé BAC+5 avec quatre années d'expérience, je suis un développeur Full Stack passionné, spécialisé en Vue.js et Node.js. Mon parcours m'a permis d'acquérir une solide expertise en architecture microservices et de développer divers outils pour optimiser les performances des applications.
+                        Diplômé BAC+5 avec quatre années d'expérience, je suis un développeur Full
+                        Stack passionné, spécialisé en Vue.js et Node.js. Mon parcours m'a permis
+                        d'acquérir une solide expertise en architecture microservices et de développer
+                        divers outils pour optimiser les performances des applications.
                     </p>
                     <p>
-                        Ma passion pour le développement et mon désir constant d'apprendre me permettent de relever des défis techniques complexes. Curieux et innovant, je suis déterminé à apporter des solutions robustes et efficaces pour chaque projet.
+                        Ma passion pour le développement et mon désir constant d'apprendre me
+                        permettent de relever des défis techniques complexes. Curieux et innovant, je
+                        suis déterminé à apporter des solutions robustes et efficaces pour chaque
+                        projet.
                     </p>
                 </div>
                 <div class="skills">
                     <h3>Compétences</h3>
-                    <div class="skill-category">
-                        <h4>Front-end</h4>
-                        <ul>
-                            <li>Vue.js</li>
-                            <li>React</li>
-                            <li>HTML5/CSS3</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Back-end</h4>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>TypeScript</li>
-                            <li>API RESTful</li>
-                            <li>Microservices</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Base de données</h4>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>SQLite</li>
-                            <li>InfluxDB</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Outils</h4>
-                        <ul>
-                            <li>Git</li>
-                            <li>Docker</li>
-                            <li>CI/CD</li>
-                            <li>Jira</li>
-                            <li>Figma</li>
-                        </ul>
+                    <div class="skills-content">
+                        <div class="skill-category">
+                            <h4>Front-end</h4>
+                            <ul>
+                                <li>Vue.js</li>
+                                <li>React</li>
+                                <li>HTML5/CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Back-end</h4>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>TypeScript</li>
+                                <li>API RESTful</li>
+                                <li>Microservices</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Base de données</h4>
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>SQLite</li>
+                                <li>InfluxDB</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Outils</h4>
+                            <ul>
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>CI/CD</li>
+                                <li>Jira</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -390,24 +398,33 @@
             <h2 class="section-title">Blog</h2>
             <div class="blog-posts">
                 <article class="blog-post">
-                    <img src="https://via.placeholder.com/400x200" alt="Les tendances du développement web en 2024" class="blog-post-image">
+                    <img src="https://picsum.photos/id/1/500/300?blur=6" alt="A venir" class="blog-post-image">
                     <div class="blog-post-content">
-                        <h3>Les tendances du développement web en 2024</h3>
-                        <p class="blog-post-date">15 janvier 2024</p>
-                        <p class="blog-post-excerpt">Découvrez les technologies et pratiques qui façonneront le développement web cette année...</p>
-                        <a href="#" class="read-more">Lire la suite</a>
+                        <h3>A venir</h3>
+                        <p class="blog-post-date">?? / 2024</p>
+                        <p class="blog-post-excerpt">Prochain jeu en développement...</p>
+                        <!-- <a href="#" class="read-more">Jouer au jeu</a> -->
                     </div>
                 </article>
                 <article class="blog-post">
-                    <img src="https://via.placeholder.com/400x200" alt="Comment optimiser les performances de vos applications Vue.js" class="blog-post-image">
+                    <img src="/img/CryptsOfChaos.png" alt="Crypts of Chaos" class="blog-post-image">
                     <div class="blog-post-content">
-                        <h3>Comment optimiser les performances de vos applications Vue.js</h3>
-                        <p class="blog-post-date">5 février 2024</p>
-                        <p class="blog-post-excerpt">Apprenez les meilleures pratiques pour améliorer la vitesse et l'efficacité de vos applications Vue.js...</p>
-                        <a href="#" class="read-more">Lire la suite</a>
+                        <h3>WIP : Crypts of Chaos</h3>
+                        <p class="blog-post-date">25 octobre 2024</p>
+                        <p class="blog-post-excerpt">Crypts of Chaos est inspiré d'un jeu de plateau nommé "Mini-rogue". Le joueur peut incarner plusieurs héros et doit traverser des donjons générés aléatoirement dans une ambiance Lovecraftienne.</p>
+                        <a href="https://crypts-of-chaos.netlify.app/" class="read-more">Jouer au jeu</a>
                     </div>
                 </article>
                 <article class="blog-post">
+                    <img src="/img/Killer.png" alt="Killer Game" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3>Killer Game</h3>
+                        <p class="blog-post-date">12 octobre 2024</p>
+                        <p class="blog-post-excerpt">Killer Game est un jeu de soirée fait avec Vue3/Typescript et Pinia. Le joueur va recevoir une cible et une mission, et doit faire exécuter la mission à la cible sans qu'il/elle ne s'en rende compte pour l'éliminer. Le but est de faire le plus d'éliminations possibles.</p>
+                        <a href="https://killer-game.netlify.app/" class="read-more">Jouer au jeu</a>
+                    </div>
+                </article>
+                <!-- <article class="blog-post">
                     <img src="https://via.placeholder.com/400x200" alt="L'importance de l'accessibilité dans le développement web" class="blog-post-image">
                     <div class="blog-post-content">
                         <h3>L'importance de l'accessibilité dans le développement web</h3>
@@ -415,7 +432,7 @@
                         <p class="blog-post-excerpt">Explorez pourquoi l'accessibilité est cruciale et comment l'intégrer dans vos projets web...</p>
                         <a href="#" class="read-more">Lire la suite</a>
                     </div>
-                </article>
+                </article> -->
             </div>
         </section>
 
@@ -486,7 +503,7 @@
                         <p class="timeline-date">2020 - 2022</p>
                         <ul>
                             <li>Dans une architecture micro-service :</li>
-                            <li>Création d'outils d'amélioration de productivité sur le CRM de l'équipe de développement.</li>
+                            <li>Création d'outils d'amlioration de productivité sur le CRM de l'équipe de développement.</li>
                             <li>Ajout de nouvelles fonctionnalités sur les tablettes des clients.</li>
                             <li>Création de plusieurs API. Modification et ajout de plusieurs routes.</li>
                         </ul>
@@ -612,7 +629,7 @@
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2024 Alexandre Gaultier. Tous droits réservés.</p>
-            <div class="footer-links">
+            <div class="icons-links">
                 <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/AlexandreGaultier" target="_blank"><i class="fab fa-github"></i></a>
             </div>
