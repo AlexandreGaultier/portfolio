@@ -530,11 +530,27 @@ section {
 }
 
 .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+    overflow: visible;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: 
+        radial-gradient(circle at 30% 30%, var(--primary-color) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, var(--secondary-color) 0%, transparent 50%);
+    filter: blur(30px);
+    opacity: 0.5;
+    z-index: -1;
+    animation: shadowMove 10s ease-in-out infinite alternate;
 }
 
 .hero-image img {
@@ -543,24 +559,16 @@ section {
     object-fit: cover;
     border-radius: 20px;
     border: 5px solid var(--primary-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
 }
 
-.hero-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.5);
-}
-
-@keyframes pulse {
+@keyframes shadowMove {
     0% {
-        box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgba(var(--primary-color-rgb), 0);
+        transform: translate(-5%, -5%) scale(1.1);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0);
+        transform: translate(5%, 5%) scale(0.9);
     }
 }
 
@@ -568,15 +576,25 @@ section {
     .hero {
         flex-direction: column;
         text-align: center;
+        margin-top: -1rem;
         padding: 2rem 0;
         height: auto;
         min-height: auto;
     }
 
     .hero-content {
+        margin-top: 4rem;
         padding-right: 0;
         margin-bottom: 2rem;
         order: 2;
+    }
+
+    .hero-content h2 {
+        margin: 0;
+    }
+
+    .hero-content p {
+        margin-bottom: 1rem ;
     }
 
     .hero-image {
@@ -1553,6 +1571,13 @@ textarea:focus {
 
     .hero-image {
         margin-top: 2rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-image::before {
+        width: 300px;
+        height: 320px;
     }
 
     .cta-buttons {
@@ -1589,5 +1614,7 @@ textarea:focus {
         scrollbar-width: none;
     }
 }
+
+
 
 

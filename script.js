@@ -207,4 +207,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleScroll);  // Gère également le redimensionnement
+
+    const heroImage = document.querySelector('.hero-image img');
+    const container = document.querySelector('.hero-image');
+
+    container.addEventListener('mousemove', (e) => {
+        const { left, top, width, height } = container.getBoundingClientRect();
+        const x = (e.clientX - left) / width - 0.5;
+        const y = (e.clientY - top) / height - 0.5;
+
+        heroImage.style.transform = `
+            rotateY(${x * 20}deg)
+            rotateX(${y * -20}deg)
+            translateZ(20px)
+        `;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        heroImage.style.transform = 'rotateY(0) rotateX(0) translateZ(0)';
+    });
 });
