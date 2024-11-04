@@ -226,4 +226,70 @@ document.addEventListener('DOMContentLoaded', () => {
     container.addEventListener('mouseleave', () => {
         heroImage.style.transform = 'rotateY(0) rotateX(0) translateZ(0)';
     });
+
+    // Modal functionality
+    const modal = document.getElementById('project-modal');
+    const closeBtn = document.querySelector('.close-modal');
+
+    // Données supplémentaires pour chaque projet
+    const projectDetails = {
+        'crypts-of-chaos': {
+            description: 'Crypts of Chaos est un jeu de rôle roguelike développé en Vue.js 3, où les joueurs explorent des donjons générés de manière procédurale. Le joueur incarne un héros parmi plusieurs classes disponibles (Guerrier, Mage, Voleur...) et progresse à travers différents étages du donjon en affrontant des monstres, en évitant des pièges et en négociant avec des marchands. Le jeu propose un système de combat au tour par tour stratégique, une gestion des ressources (or, points de vie, rations) et une génération aléatoire des salles pour une rejouabilité maximale. Développé avec Vue.js 3, Vuex et Vue Router, le projet met l\'accent sur une expérience utilisateur fluide et une ambiance dark fantasy immersive, soutenue par des effets visuels et sonores soignés.',
+        },
+        'killer-game': {
+            description: 'Killer Game est une adaptation numérique du célèbre jeu social \'Killer Party\', développée avec Vue.js 3 et TypeScript. Cette application web transforme l\'organisation traditionnelle du jeu en une expérience fluide et moderne, où chaque joueur reçoit secrètement une cible et une mission à accomplir. Le jeu propose une interface élégante et intuitive permettant aux organisateurs de créer facilement des parties, de gérer les joueurs et d\'attribuer automatiquement les missions. Les participants peuvent rejoindre une partie via un code unique et suivre leur progression en temps réel. L\'application dispose d\'une base de données de missions soigneusement équilibrées, conçues pour encourager l\'interaction sociale tout en restant accessibles et amusantes. Développé avec Vue.js 3, Pinia pour la gestion d\'état, et Vue Router pour la navigation, le projet met l\'accent sur la confidentialité des missions et l\'expérience utilisateur. L\'interface responsive s\'adapte parfaitement aux appareils mobiles, permettant aux joueurs de consulter discrètement leurs missions et de valider leurs éliminations. Le design minimaliste et l\'ambiance mystérieuse, soulignés par une identité visuelle distinctive, contribuent à l\'immersion dans ce jeu d\'élimination sociale stratégique.',
+        },
+        // Ajoutez d'autres projets ici
+    };
+
+    projectCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Vérifie si le clic n'est pas sur un lien
+            if (!e.target.closest('.project-links')) {
+                const title = card.querySelector('h3').textContent;
+                const img = card.querySelector('img').src;
+                const tags = card.querySelector('.project-tags').innerHTML;
+                const links = card.querySelector('.project-links')?.innerHTML || '';
+                
+                // Identifier le projet pour obtenir la description détaillée
+                const projectId = title.toLowerCase().replace(/\s+/g, '-');
+                const description = projectDetails[projectId]?.description || 
+                                  card.querySelector('p').textContent;
+
+                // Remplir la modal
+                modal.querySelector('.modal-title').textContent = title;
+                modal.querySelector('.modal-image').src = img;
+                modal.querySelector('.modal-image').alt = title;
+                modal.querySelector('.modal-description').textContent = description;
+                modal.querySelector('.modal-tags').innerHTML = tags;
+                modal.querySelector('.modal-links').innerHTML = links;
+
+                // Afficher la modal
+                modal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Fermer la modal
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    });
+
+    // Fermer la modal en cliquant en dehors
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Fermer avec la touche Echap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
 });
