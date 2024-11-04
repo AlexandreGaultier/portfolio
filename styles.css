@@ -1767,7 +1767,6 @@ textarea:focus {
     margin: auto;
     padding: 30px;
     width: 90%;
-    max-width: 1200px;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transform: scale(0.7);
