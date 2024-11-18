@@ -32,7 +32,6 @@
             </nav>
         </div>
     </header>
-    <!-- Ajout de la bannière thématique -->
     <div class="theme-banner">
         <div class="container">
             <span class="theme-icon">🎃</span>
@@ -50,16 +49,21 @@
                     <h1>Alexandre Gaultier</h1>
                     <h2>Développeur Full Stack</h2>
                     <p>Passionné par la création d'applications web innovantes et performantes</p>
-                    <div class="cta-buttons">
-                        <div class="top-buttons">
-                            <a href="#portfolio" class="cta-button">Voir mes projets</a>
-                            <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank" class="cta-button linkedin">
-                                <i style="font-size: 1.7rem; padding: 0.1rem 0;" class="fab fa-linkedin"></i>
+                    <div class="cta-section">
+                        <div class="cta-grid">
+                            <a href="#portfolio" class="cta-card projects">
+                                <i class="fas fa-code"></i>
+                                <span>Découvrir mes projets</span>
                             </a>
-                        </div>
-                        <div class="bottom-buttons">
-                            <a href="lien_vers_votre_cv" class="cta-button cv-qr-code" title="Voir mon CV">
-                                <img src="/img/CVqrcode.png" alt="QR Code CV" loading="lazy" class="qr-code-img">
+                            <a href="https://www.linkedin.com/in/alexandre-g-59a387172/" target="_blank" class="cta-card linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>Me contacter</span>
+                            </a>
+                            <a href="https://flowcv.com/resume/eoglsfdm7g" target="_blank" class="cta-card cv">
+                                <div class="qr-wrapper">
+                                    <img src="/img/CVqrcode.png" alt="QR Code CV" loading="lazy" class="qr-code-img">
+                                </div>
+                                <span>Voir mon CV</span>
                             </a>
                         </div>
                     </div>
@@ -71,29 +75,31 @@
         </section>
 
         <section id="a-propos" class="container">
-            <h2>À Propos</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Diplômé BAC+5 avec quatre années d'expérience, je suis un développeur Full
-                        Stack passionné, spécialisé en Vue.js et Node.js. Mon parcours m'a permis
-                        d'acquérir une solide expertise en architecture microservices et de développer
-                        divers outils pour optimiser les performances des applications.
-                    </p>
-                    <br>
-                    <p>
-                        Ma passion pour le développement et mon désir constant d'apprendre me
-                        permettent de relever des défis techniques complexes. Curieux et innovant, je
-                        suis déterminé à apporter des solutions robustes et efficaces pour chaque
-                        projet.
-                    </p>
-                    <br>
-                    <p>
-                        Je suis actuellement à la recherche d'une opportunité pour mettre mes compétences au service d'une entreprise dynamique et innovante.
-                    </p>
+                <div class="skills">
+                    <h2 class="section-title">À Propos</h2>
+                    <div class="about-text">
+                        <p>
+                            Diplômé BAC+5 avec quatre années d'expérience, je suis un développeur Full
+                            Stack passionné, spécialisé en Vue.js et Node.js. Mon parcours m'a permis
+                            d'acquérir une solide expertise en architecture microservices et de développer
+                            divers outils pour optimiser les performances des applications.
+                        </p>
+                        <br>
+                        <p>
+                            Ma passion pour le développement et mon désir constant d'apprendre me
+                            permettent de relever des défis techniques complexes. Curieux et innovant, je
+                            suis déterminé à apporter des solutions robustes et efficaces pour chaque
+                            projet.
+                        </p>
+                        <br>
+                        <p>
+                            Je suis actuellement à la recherche d'une opportunité pour mettre mes compétences au service d'une entreprise dynamique et innovante.
+                        </p>
+                    </div>
                 </div>
                 <div class="skills">
-                    <h3>Compétences</h3>
+                    <h2 class="section-title">Compétences</h2>
                     <div class="skills-content">
                         <div class="skill-category">
                             <h4>Front-end</h4>
