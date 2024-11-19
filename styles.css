@@ -1023,7 +1023,7 @@ textarea:focus {
 
 .project-links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
     margin-top: auto;
     padding-top: 15px;
@@ -1033,9 +1033,9 @@ textarea:focus {
     display: flex;
 }
 
-.project-link-wrapper:only-child {
+/* .project-link-wrapper:only-child {
     grid-column: 2;
-}
+} */
 
 .project-link {
     padding: 6px 10px; /* Réduit le padding */

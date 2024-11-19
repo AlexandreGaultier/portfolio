@@ -236,10 +236,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'crypts-of-chaos': {
             description: 'Crypts of Chaos est un jeu de rôle roguelike développé en Vue.js 3, où les joueurs explorent des donjons générés de manière procédurale. Le joueur incarne un héros parmi plusieurs classes disponibles (Guerrier, Mage, Voleur...) et progresse à travers différents étages du donjon en affrontant des monstres, en évitant des pièges et en négociant avec des marchands. Le jeu propose un système de combat au tour par tour stratégique, une gestion des ressources (or, points de vie, rations) et une génération aléatoire des salles pour une rejouabilité maximale. Développé avec Vue.js 3, Vuex et Vue Router, le projet met l\'accent sur une expérience utilisateur fluide et une ambiance dark fantasy immersive, soutenue par des effets visuels et sonores soignés.',
         },
-        'killer-game': {
+        'jeu-du_killer': {
             description: 'Killer Game est une adaptation numérique du célèbre jeu social \'Killer Party\', développée avec Vue.js 3 et TypeScript. Cette application web transforme l\'organisation traditionnelle du jeu en une expérience fluide et moderne, où chaque joueur reçoit secrètement une cible et une mission à accomplir. Le jeu propose une interface élégante et intuitive permettant aux organisateurs de créer facilement des parties, de gérer les joueurs et d\'attribuer automatiquement les missions. Les participants peuvent rejoindre une partie via un code unique et suivre leur progression en temps réel. L\'application dispose d\'une base de données de missions soigneusement équilibrées, conçues pour encourager l\'interaction sociale tout en restant accessibles et amusantes. Développé avec Vue.js 3, Pinia pour la gestion d\'état, et Vue Router pour la navigation, le projet met l\'accent sur la confidentialité des missions et l\'expérience utilisateur. L\'interface responsive s\'adapte parfaitement aux appareils mobiles, permettant aux joueurs de consulter discrètement leurs missions et de valider leurs éliminations. Le design minimaliste et l\'ambiance mystérieuse, soulignés par une identité visuelle distinctive, contribuent à l\'immersion dans ce jeu d\'élimination sociale stratégique.',
         },
-        // Ajoutez d'autres projets ici
+        "cup-clash": {
+            description: "Jeu de soirée dynamique où chaque joueur incarne secrètement un héros (Guerrier, Archer, Mage...) dans une bataille épique où votre gobelet devient votre barre de vie ! Nouez des alliances, utilisez vos capacités spéciales au moment opportun, et peut-être même trahissez vos alliés pour devenir le dernier survivant. L'application sert de juge impartial, particulièrement utile quand certains participants deviennent... disons, 'stratégiquement créatifs' ! 😉"
+        }
     };
 
     projectCards.forEach(card => {
