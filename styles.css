@@ -1,5 +1,5 @@
 /* Base styles */
-/* :root {
+:root {
 
     --primary-color: #3498db;
     --secondary-color: #2c3e50;
@@ -16,10 +16,10 @@
     --header-bg: #2c3e50;
     --footer-bg: #1a1a1a;
     --card-bg: #2c3e50;
-} */
+}
 
 /* Orange automnal */
-:root {
+/* :root {
 
     --primary-color: #e67e22;
     --secondary-color: #d35400;
@@ -36,7 +36,7 @@
     --header-bg: #d35400;
     --footer-bg: #1a1a1a;
     --card-bg: #2c3e50;
-}
+} */
 
 
 * {
@@ -1999,7 +1999,8 @@ textarea:focus {
 }
 
 .cta-card.cv {
-    background: var(--card-bg);
+    background: #fff;
+    color: #000;
 }
 
 .qr-wrapper {
