@@ -1176,7 +1176,7 @@ textarea:focus {
 }
 
 .main-footer {
-    background-color: var(--footer-bg);
+    background-color: var(--header-bg);
     transition: background-color 0.3s ease;
 }
 
