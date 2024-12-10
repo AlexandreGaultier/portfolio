@@ -248,20 +248,21 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', (e) => {
             // Vérifie si le clic n'est pas sur un lien
             if (!e.target.closest('.project-links')) {
-                const title = card.querySelector('h3').textContent;
+                const titleElement = card.querySelector('h3').cloneNode(true); // Utiliser cloneNode pour conserver la structure HTML
                 const img = card.querySelector('img').src;
                 const tags = card.querySelector('.project-tags').innerHTML;
                 const links = card.querySelector('.project-links')?.innerHTML || '';
                 
                 // Identifier le projet pour obtenir la description détaillée
-                const projectId = title.toLowerCase().replace(/\s+/g, '-');
+                const projectId = titleElement.textContent.trim().toLowerCase().replace(/\s+/g, '-');
                 const description = projectDetails[projectId]?.description || 
                                   card.querySelector('p').textContent;
 
                 // Remplir la modal
-                modal.querySelector('.modal-title').textContent = title;
+                modal.querySelector('.modal-title').innerHTML = ''; // Vider d'abord le contenu
+                modal.querySelector('.modal-title').appendChild(titleElement); // Ajouter l'élément cloné
                 modal.querySelector('.modal-image').src = img;
-                modal.querySelector('.modal-image').alt = title;
+                modal.querySelector('.modal-image').alt = titleElement.textContent.trim();
                 modal.querySelector('.modal-description').textContent = description;
                 modal.querySelector('.modal-tags').innerHTML = tags;
                 modal.querySelector('.modal-links').innerHTML = links;

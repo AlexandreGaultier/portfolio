@@ -1835,11 +1835,11 @@ textarea:focus {
 }
 
 .modal-title {
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 2em;
-    position: relative;
-    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .modal-title::after {
@@ -2044,6 +2044,39 @@ textarea:focus {
     .progress-bar {
         width: 100%;
     }
+}
+
+.chip {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.chip-wip {
+    background-color: #ff9800;
+    color: white;
+}
+
+.chip-featured {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.project-info h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.modal-title .chip {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    vertical-align: middle;
 }
 
 
