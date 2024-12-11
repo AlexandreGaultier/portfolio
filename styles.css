@@ -224,6 +224,7 @@ section {
 
 .project-info p {
     margin-bottom: 1rem;
+    text-align: justify;
     color: var(--text-color);
 }
 
