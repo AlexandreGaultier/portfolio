@@ -295,4 +295,45 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         }
     });
+
+    // Modal pour les affiches graphiques
+    const graphicModal = document.getElementById('graphic-modal');
+    const graphicItems = document.querySelectorAll('.graphic-item');
+    const closeGraphicModal = graphicModal.querySelector('.close-modal');
+
+    graphicItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            
+            // Remplir la modal graphique
+            graphicModal.querySelector('.graphic-modal-image').src = img.src;
+            graphicModal.querySelector('.graphic-modal-image').alt = img.alt;
+            
+            // Afficher la modal
+            graphicModal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Fermer la modal graphique
+    closeGraphicModal.addEventListener('click', () => {
+        graphicModal.classList.remove('show');
+        document.body.style.overflow = '';
+    });
+
+    // Fermer la modal graphique en cliquant en dehors
+    graphicModal.addEventListener('click', (e) => {
+        if (e.target === graphicModal) {
+            graphicModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Fermer la modal graphique avec la touche Echap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && graphicModal.classList.contains('show')) {
+            graphicModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
 });
