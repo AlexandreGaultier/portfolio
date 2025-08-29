@@ -744,7 +744,7 @@ section {
 /* Footer styles */
 .main-footer {
     background-color: var(--footer-bg);
-    color: #fff;
+    color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     transition: background-color 0.3s ease;
