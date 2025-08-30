@@ -1766,7 +1766,7 @@ textarea:focus {
     background-color: var(--card-bg);
     margin: auto;
     padding: 30px;
-    width: 90%;
+    width: auto;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transform: scale(0.7);
@@ -1823,9 +1823,9 @@ textarea:focus {
     transition: transform 0.5s ease;
 }
 
-.modal-image:hover {
+/* .modal-image:hover {
     transform: scale(1.05);
-}
+} */
 
 .modal-info {
     padding: 20px;
