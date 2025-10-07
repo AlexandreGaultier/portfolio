@@ -2082,8 +2082,8 @@ textarea:focus {
 /* Styles pour la section Graphisme */
 .graphics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     margin-top: 2rem;
 }
 
@@ -2162,8 +2162,8 @@ textarea:focus {
 /* Responsive pour la section graphisme */
 @media (max-width: 768px) {
     .graphics-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 0.8rem;
     }
     
     .graphic-item {
@@ -2185,8 +2185,8 @@ textarea:focus {
 
 @media (max-width: 480px) {
     .graphics-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        gap: 0.8rem;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 0.6rem;
     }
     
     .graphic-overlay {
